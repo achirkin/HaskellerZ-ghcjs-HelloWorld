@@ -1,0 +1,24 @@
+name: Hello-HaskellerZ
+version: 0.1
+cabal-version: >=1.22
+build-type: Simple
+license: BSD3
+license-file: LICENSE
+copyright: (c) Artem Chirkin
+maintainer: Artem Chirkin <chirkin@arch.ethz.ch>
+stability: experimental
+homepage: http://ia.arch.ethz.ch/
+bug-reports: mailto:chirkin@arch.ethz.ch
+synopsis: GHCJS WebGL binding
+description:
+    Just a small example of using ghcjs.
+category: GHCJS
+author: Artem Chirkin
+
+executable Hello-HaskellerZ
+    main-is: Main.hs
+    build-depends:
+        base >=4.2 && <5,
+        ghcjs-base ==0.2.*
+    default-language: Haskell2010
+    ghc-options: -Wall
